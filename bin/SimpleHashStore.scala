@@ -11,6 +11,10 @@ object SimpleHashStoreMain {
 
     var span = new SpanHash(10, one,two,three)
     
+    //hashI.payLoad += (123.asInstanceOf[Long] -> 123.asInstanceOf[Long])
+    
+    
+    
     1
   }
 }
