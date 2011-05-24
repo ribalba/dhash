@@ -1,6 +1,6 @@
 all:
 	find . -name "*\.java" | xargs javac
-	find . -name "*\.scala" | xargs scalac
+	find . -name "*\.scala" | xargs fsc
 
 
 clean:

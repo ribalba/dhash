@@ -16,10 +16,10 @@ class SpanHash(length: Int, wHashes: HashItem*) extends HashItem{
     
   }
   
-  var hWord = new SimpleHashStore.MurmurHash3().hash(finWord)
+  var hash = new SimpleHashStore.MurmurHash3().hash(finWord)
 
   override def toString() = {
-    "SpanHash@"+hWord
+    "SpanHash@"+hash
   }
   
   

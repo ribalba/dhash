@@ -1,6 +1,5 @@
 package SimpleHashStore
 
-
 class WordHash (word:String) extends HashItem{
 
   
@@ -9,10 +8,10 @@ class WordHash (word:String) extends HashItem{
   
   var lWord = word.length()
 
-  var hWord = new SimpleHashStore.MurmurHash3().hash(word)
+  var hash = new SimpleHashStore.MurmurHash3().hash(word)
 
   override def toString() = {
-    "WordHash@"+hWord+"@"+ cWord
+    "WordHash@"+hash+"@"+ cWord
   }
 
 }

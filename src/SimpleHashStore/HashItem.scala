@@ -3,7 +3,7 @@ package SimpleHashStore
 import SimpleHashStore.MurmurHash3._
 
 
-class HashItem (){
+abstract class HashItem () {
   
   // This should never be called alone
   // Make this a trait probably
@@ -14,6 +14,11 @@ class HashItem (){
   
   var optional = Set[String]()
   
+  var hash :Long
+  
+  override def toString() = {
+    "HashItem@"+hash
+  }
   
 
 }
